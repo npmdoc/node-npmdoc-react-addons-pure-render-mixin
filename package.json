@@ -1,0 +1,17 @@
+{
+    "buildNpmdoc":"react-addons-pure-render-mixin",
+    "devDependencies": {
+        "react-addons-pure-render-mixin": "*",
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "name":"npmdoc-react-addons-pure-render-mixin",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-react-addons-pure-render-mixin"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh"
+    },
+    "version": "0.0.1"
+}
