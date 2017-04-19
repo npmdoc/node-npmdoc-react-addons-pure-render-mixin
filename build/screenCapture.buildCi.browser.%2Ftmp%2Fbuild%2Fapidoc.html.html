@@ -47,9 +47,9 @@
 }
 </style>
 <h1>api documentation for
-    <a href="https://github.com/facebook/react#readme">react-addons-pure-render-mixin (v15.4.2)</a>
+    <a href="https://github.com/facebook/react#readme">react-addons-pure-render-mixin (v15.5.2)</a>
 </h1>
-<h4>This package provides the React PureRenderMixin add-on.</h4>
+<h4>&gt;**Note:** &gt;This is a legacy React addon, and is no longer maintained. &gt; &gt;We don't encourage using it in new code, but it exists for backwards compatibility.   &gt;The recommended migration path is to use [`React.PureComponent`](https://facebook.github.io/re</h4>
 <div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.react-addons-pure-render-mixin">module react-addons-pure-render-mixin</a><ol>
@@ -58,6 +58,25 @@
 
             <a class="apidocElementLiA" href="#apidoc.element.react-addons-pure-render-mixin.shouldComponentUpdate">
             function <span class="apidocSignatureSpan">react-addons-pure-render-mixin.</span>shouldComponentUpdate
+            <span class="apidocSignatureSpan">(nextProps, nextState)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-addons-pure-render-mixin.</span>react_addons_pure_render_mixin</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-addons-pure-render-mixin.react_addons_pure_render_mixin">module react-addons-pure-render-mixin.react_addons_pure_render_mixin</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-addons-pure-render-mixin.react_addons_pure_render_mixin.shouldComponentUpdate">
+            function <span class="apidocSignatureSpan">react-addons-pure-render-mixin.react_addons_pure_render_mixin.</span>shouldComponentUpdate
             <span class="apidocSignatureSpan">(nextProps, nextState)</span>
             </a>
 
@@ -79,7 +98,35 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">shouldComponentUpdate = function (nextProps, nextState) {
-  return shallowCompare(this, nextProps, nextState);
+  return (
+    !shallowEqual(this.props, nextProps) ||
+    !shallowEqual(this.state, nextState)
+  );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-addons-pure-render-mixin.react_addons_pure_render_mixin" id="apidoc.module.react-addons-pure-render-mixin.react_addons_pure_render_mixin">module react-addons-pure-render-mixin.react_addons_pure_render_mixin</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-addons-pure-render-mixin.react_addons_pure_render_mixin.shouldComponentUpdate" id="apidoc.element.react-addons-pure-render-mixin.react_addons_pure_render_mixin.shouldComponentUpdate">
+        function <span class="apidocSignatureSpan">react-addons-pure-render-mixin.react_addons_pure_render_mixin.</span>shouldComponentUpdate
+        <span class="apidocSignatureSpan">(nextProps, nextState)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">shouldComponentUpdate = function (nextProps, nextState) {
+  return (
+    !shallowEqual(this.props, nextProps) ||
+    !shallowEqual(this.state, nextState)
+  );
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
