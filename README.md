@@ -1,9 +1,14 @@
-# api documentation for  [react-addons-pure-render-mixin (v15.4.2)](https://github.com/facebook/react#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-addons-pure-render-mixin.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-addons-pure-render-mixin) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-addons-pure-render-mixin.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-addons-pure-render-mixin)
-#### This package provides the React PureRenderMixin add-on.
+# npmdoc-react-addons-pure-render-mixin
 
-[![NPM](https://nodei.co/npm/react-addons-pure-render-mixin.png?downloads=true)](https://www.npmjs.com/package/react-addons-pure-render-mixin)
+#### api documentation for  [react-addons-pure-render-mixin (v15.5.2)](https://github.com/facebook/react#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-addons-pure-render-mixin.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-addons-pure-render-mixin) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-addons-pure-render-mixin.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-addons-pure-render-mixin)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-react-addons-pure-render-mixin/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-react-addons-pure-render-mixin_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-react-addons-pure-render-mixin/build/apidoc.html)
+#### >**Note:** >This is a legacy React addon, and is no longer maintained. > >We don't encourage using it in new code, but it exists for backwards compatibility.   >The recommended migration path is to use [`React.PureComponent`](https://facebook.github.io/re
+
+[![NPM](https://nodei.co/npm/react-addons-pure-render-mixin.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/react-addons-pure-render-mixin)
+
+- [https://npmdoc.github.io/node-npmdoc-react-addons-pure-render-mixin/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-react-addons-pure-render-mixin/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-react-addons-pure-render-mixin/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-react-addons-pure-render-mixin/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-react-addons-pure-render-mixin/build/screenCapture.npmPackageListing.svg)
 
@@ -23,18 +28,25 @@
         "fbjs": "^0.8.4",
         "object-assign": "^4.1.0"
     },
-    "description": "This package provides the React PureRenderMixin add-on.",
-    "devDependencies": {},
+    "description": ">**Note:** >This is a legacy React addon, and is no longer maintained. > >We don't encourage using it in new code, but it exists for backwards compatibility.   >The recommended migration path is to use ['React.PureComponent'](https://facebook.github.io/re",
+    "devDependencies": {
+        "jest": "^19.0.2",
+        "react": "^15.4.2",
+        "react-addons-test-utils": "15.4.2",
+        "react-dom": "^15.4.2"
+    },
     "directories": {},
     "dist": {
-        "shasum": "a8433c71c45e2368503721921dc47bdaf1fbabcd",
-        "tarball": "https://registry.npmjs.org/react-addons-pure-render-mixin/-/react-addons-pure-render-mixin-15.4.2.tgz"
+        "shasum": "ebb846aeb2fd771336c232822923108f87d5bff2",
+        "tarball": "https://registry.npmjs.org/react-addons-pure-render-mixin/-/react-addons-pure-render-mixin-15.5.2.tgz"
     },
     "files": [
         "LICENSE",
         "PATENTS",
         "README.md",
-        "index.js"
+        "index.js",
+        "react-addons-pure-render-mixin.js",
+        "react-addons-pure-render-mixin.min.js"
     ],
     "homepage": "https://github.com/facebook/react#readme",
     "keywords": [
@@ -45,70 +57,44 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "fb",
-            "email": "opensource+npm@fb.com"
+            "name": "acdlite"
         },
         {
-            "name": "gaearon",
-            "email": "dan.abramov@gmail.com"
+            "name": "brianvaughn"
         },
         {
-            "name": "graue",
-            "email": "scott@oceanbase.org"
+            "name": "fb"
         },
         {
-            "name": "sebmarkbage",
-            "email": "sebastian@calyptus.eu"
+            "name": "gaearon"
         },
         {
-            "name": "spicyj",
-            "email": "ben@benalpert.com"
+            "name": "sebmarkbage"
         },
         {
-            "name": "tomocchino",
-            "email": "tomocchino@gmail.com"
+            "name": "spicyj"
         },
         {
-            "name": "zpao",
-            "email": "paul@oshannessy.com"
+            "name": "tomocchino"
+        },
+        {
+            "name": "trueadm"
+        },
+        {
+            "name": "zpao"
         }
     ],
     "name": "react-addons-pure-render-mixin",
     "optionalDependencies": {},
-    "peerDependencies": {
-        "react": "^15.4.2"
-    },
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/facebook/react.git"
     },
-    "scripts": {},
-    "version": "15.4.2"
+    "scripts": {
+        "test": "jest"
+    },
+    "version": "15.5.2"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module react-addons-pure-render-mixin](#apidoc.module.react-addons-pure-render-mixin)
-1.  [function <span class="apidocSignatureSpan">react-addons-pure-render-mixin.</span>shouldComponentUpdate (nextProps, nextState)](#apidoc.element.react-addons-pure-render-mixin.shouldComponentUpdate)
-
-
-
-# <a name="apidoc.module.react-addons-pure-render-mixin"></a>[module react-addons-pure-render-mixin](#apidoc.module.react-addons-pure-render-mixin)
-
-#### <a name="apidoc.element.react-addons-pure-render-mixin.shouldComponentUpdate"></a>[function <span class="apidocSignatureSpan">react-addons-pure-render-mixin.</span>shouldComponentUpdate (nextProps, nextState)](#apidoc.element.react-addons-pure-render-mixin.shouldComponentUpdate)
-- description and source-code
-```javascript
-shouldComponentUpdate = function (nextProps, nextState) {
-  return shallowCompare(this, nextProps, nextState);
-}
-```
-- example usage
-```shell
-n/a
 ```
 
 
